@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Note Taking App</h1>
+      <form id="noteForm">
+        <input type="hidden" id="noteId" />
+        <input type="text" id="title" placeholder="Title" required />
+        <textarea id="content" placeholder="Content" required></textarea>
+        <button type="submit">Save Note</button>
+      </form>
+      <div id="noteGrid" class="grid"></div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-icon">
+          <div class="icon-placeholder">
+            <img src="sqljs.png" alt="js icon" />
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>Made by Eric Peter Manalili</p>
+          <p>
+            Powered by
+            <a
+              href="https://sql.js.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >sql.js</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
